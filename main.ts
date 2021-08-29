@@ -1,4 +1,4 @@
-﻿/*
+/*
 Copyright (C): 2021-2030, The Chinese University of Hong Kong.
 */
 
@@ -35,7 +35,7 @@ namespace CUHK_JC_iCar_顯示類 {
         ON =1
     }
 
-    //% blockId=mbit_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=mbit_LED1 block="LED燈|引腳 %pin|狀態 %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -46,7 +46,7 @@ namespace CUHK_JC_iCar_顯示類 {
 
     }
 
-    //% blockId=mbit_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=mbit_LED2 block="LED燈|引腳 %pin|亮度 %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -58,7 +58,7 @@ namespace CUHK_JC_iCar_顯示類 {
 
     }
 
-    //% blockId=mbit_BreathLED block="BreathLED|pin %pin"
+    //% blockId=mbit_BreathLED block="呼吸燈|引腳 %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -79,7 +79,7 @@ namespace CUHK_JC_iCar_顯示類 {
 
     }
 
-    //% blockId=mbit_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=mbit_RGB block="RGB七彩燈|引腳R %pin1|引腳G %pin2|引腳B %pin3|紅色 %value1|綠色 %value2|藍色 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -92,7 +92,7 @@ namespace CUHK_JC_iCar_顯示類 {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=mbit_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=mbit_RGB2 block="RGB七彩燈|引腳R %pin1|引腳G %pin2|引腳B %pin3|顯示 %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -175,7 +175,7 @@ namespace CUHK_JC_iCar_傳感器類 {
     }
     
 
-    //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=mbit_Voice_Sensor block="聲音傳感器|引腳 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -200,7 +200,7 @@ namespace CUHK_JC_iCar_傳感器類 {
             control.waitMicros(13);
         }
     }
-    //% blockId=mbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|blockade"
+    //% blockId=mbit_IR_Sensor block="紅外傳感器|引腳 %pin| |%value|障礙物"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -218,7 +218,7 @@ namespace CUHK_JC_iCar_傳感器類 {
 
     }
 
-    //% blockId=mbit_IR_Send block="IR_Send|pin %pin"
+    //% blockId=mbit_IR_Send block="紅外發射|引腳 %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -230,7 +230,7 @@ namespace CUHK_JC_iCar_傳感器類 {
 
     }
    
-    //% blockId=mbit_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=mbit_ultrasonic block="超聲波|發射管腳 %Trig|接收管腳 %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -292,7 +292,7 @@ namespace CUHK_JC_iCar_輸入類 {
         Realse = 1
     }
 
-    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=mbit_TouchPad block="觸摸開關|引腳 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -309,7 +309,7 @@ namespace CUHK_JC_iCar_輸入類 {
 
     }
     
-    //% blockId=mbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=mbit_Rocker block="搖桿|VRX %pin1|VRY %pin2|SW %pin3|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -352,7 +352,7 @@ namespace CUHK_JC_iCar_輸入類 {
 
     }
 
-    //% blockId=mbit_Button block="Button|pin %pin|value %value"
+    //% blockId=mbit_Button block="按鍵|引腳 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -384,7 +384,7 @@ namespace CUHK_JC_iCar_音樂類 {
         Beep
     }
 
-    //% blockId=mbit_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=mbit_Buzzer block="蜂鳴器|引腳 %pin|值 %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -406,7 +406,7 @@ namespace CUHK_JC_iCar_音樂類 {
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace CUHK_JC_iCar_電機類 {
 
-    //% blockId=mbit_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=mbit_Fan block="風扇|引腳 %pin|速度 %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -418,7 +418,7 @@ namespace CUHK_JC_iCar_電機類 {
 
     }
 
-    //% blockId=mbit_Servo block="Servo|pin %pin|value %value"
+    //% blockId=mbit_Servo block="舵機|引腳 %pin|角度 %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -763,7 +763,7 @@ namespace CUHK_JC_iCar_小車類 {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=mbit_RGB_Car_Big2 block="小車RGB探照燈|顏色 %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -821,7 +821,7 @@ namespace CUHK_JC_iCar_小車類 {
             }
         }
     }
-    //% blockId=mbit_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=mbit_RGB_Car_Big block="小車RGB探照燈|紅色 %value1|綠色 %value2|藍色 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -846,7 +846,7 @@ namespace CUHK_JC_iCar_小車類 {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=mbit_RGB_Car_Program block="七彩流水燈"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -860,7 +860,7 @@ namespace CUHK_JC_iCar_小車類 {
     }
 
 
-	//% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
+	//% blockId=mbit_ultrasonic_car block="超聲波返回距離(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -885,7 +885,7 @@ namespace CUHK_JC_iCar_小車類 {
         return  Math.floor(length);
     }
 
-    //% blockId=mbit_Music_Car block="Music_Car|%index"
+    //% blockId=mbit_Music_Car block="小車音樂播放|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -914,7 +914,7 @@ namespace CUHK_JC_iCar_小車類 {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=mbit_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=mbit_Servo_Car block="小車舵機|編號 %num|角度 %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -929,7 +929,7 @@ namespace CUHK_JC_iCar_小車類 {
 
     }
 
-    //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=mbit_Avoid_Sensor block="避障傳感器|檢測到 %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -972,7 +972,7 @@ namespace CUHK_JC_iCar_小車類 {
         return temp;
 
     }
-    //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=mbit_Line_Sensor block="巡線傳感器|位置 %direct|檢測到 %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1017,7 +1017,7 @@ namespace CUHK_JC_iCar_小車類 {
         return temp;
 
     }
-    //% blockId=mbit_CarCtrl block="CarCtrl|%index"
+    //% blockId=mbit_CarCtrl block="小車控製|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1033,7 +1033,7 @@ namespace CUHK_JC_iCar_小車類 {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=mbit_CarCtrlSpeed block="小車控製|%index|速度 %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -1050,7 +1050,7 @@ namespace CUHK_JC_iCar_小車類 {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=mbit_CarCtrlSpeed2 block="小車控製|%index|左電機速度 %speed1|右電機速度 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
