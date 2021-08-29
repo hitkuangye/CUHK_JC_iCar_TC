@@ -604,7 +604,7 @@ namespace huskylens {
     /**
      * Photos and screenshots
      */
-    //%block="HuskyLens take %request and save to SD card"
+    //%block="二哈識圖觸發 %request 保存到SD卡"
     //% weight=25
     //% advanced=true
     export function takePhotoToSDCard(request:HUSKYLENSphoto):void{
